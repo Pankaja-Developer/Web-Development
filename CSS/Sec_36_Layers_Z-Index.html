@@ -1,0 +1,72 @@
+<!DOCTY PE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layers and Z-Index In CSS</title>
+    <style>
+        body{
+            height: 1000px;
+        }
+        #parent {
+            padding: 20px;
+            width: 50%;
+            margin: 100px;
+            position: relative;
+            
+        }
+
+        #one {
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            position: relative;
+            z-index: 3;
+        }
+
+        #two {
+            background-color:violet;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            position: relative;
+            top: 50px;
+            left: -50px;
+            z-index: 2;
+
+        }
+
+        #three {
+            background-color: yellowgreen;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            position: relative;
+            top: 100px;
+            left: -100px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- there are 4 types of position
+    1.static (default)
+    2.relative
+    3.fixed
+    4.absolute
+
+    1.top
+    2.bottom
+    3.left
+    4.right -->
+
+    <div id="parent">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </div>
+</body>
+
+</html>

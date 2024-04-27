@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query In CSS</title>
+    <style>
+        /* @media screen and (max-width: 768px) { */
+            /* @media screen and (max-width: 768px) and (min-width: 400px)  { */
+                /* @media screen or (max-width: 768px) and (min-width: 400px)  { */
+        @media screen and (max-width: 768px) {
+            #div1{
+                width:50% ;
+            }
+            #div2{
+                width: 50%;
+            }
+        }
+        /* to make responsive image */
+        img{
+            width: 100%;
+            height: auto;
+        }
+        /* to make responsive video */
+        video{
+            width: 100%;
+            height: auto;
+        }
+        #div1 {
+            width: 70%;
+            float: left;
+            background-color: blueviolet;
+        }
+
+        #div2{
+            width: 30%;
+            float: left;
+            background-color: violet;
+        }
+        h1{
+            font-size: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <h1>
+            div1
+        </h1>
+    </div>
+    <div id="div2">
+        <h1>div2</h1>
+    </div>
+</body>
+
+</html>

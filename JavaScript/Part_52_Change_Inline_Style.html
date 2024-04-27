@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 52] - Change Inline Style</title>
+</head>
+<body>
+    <button id="btn" name="form1" style="color: blue;">Send</button>
+
+
+    <script>
+        // by inline css
+        // let btn = document.getElementById("btn");
+        // it replace inline style
+        // btn.style.cssText = "background-color: red; color: white;";
+
+
+        // let btn = document.getElementById("btn");
+        // btn.setAttribute('style', 'color: white; background-color: red;');
+
+        // let btn = document.getElementById("btn");
+        // btn.style.color = "white";
+        // btn.style.background = "red";
+
+        let btn = document.getElementById("btn");
+        btn.style.cssText += "background-color: red; border: 2px solid green";
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid In CSS</title>
+    <style>
+        .grid-container{
+            background-color: aqua;
+            display: grid;
+            padding: 20px;
+            grid-template-areas: 
+            'header header header header header '
+            'menu main main main right'
+            'menu footer footer footer footer';
+            grid-gap: 10px;
+        }
+        .grid-item{
+            background-color: blueviolet;
+            padding: 20px;
+            border: 1px solid black;
+            font-size: 40px;
+            text-align: center;
+        }
+#grid-1{
+    grid-area: header;
+}
+#grid-2{
+    grid-area: menu;
+}
+#grid-3{
+    grid-area: main;
+}
+#grid-4{
+    grid-area: right ; 
+}
+#grid-5{
+    grid-area: footer; 
+}
+    </style>
+</head>
+<body>
+     <div class="grid-container">
+        <div class="grid-item" id="grid-1">one</div>
+        <div class="grid-item" id="grid-2">tow</div>
+        <div class="grid-item" id="grid-3">three</div>
+        <div class="grid-item" id="grid-4">four</div>
+        <div class="grid-item" id="grid-5">five</div>
+
+    </div>
+</body>
+</html>

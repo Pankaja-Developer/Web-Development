@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units In CSS</title>
+    <style>
+        html{
+            font-size: 14px;
+        }
+        #parent {
+            /* border: solid red 5px; */
+            /* width: 10cm; */
+            /* width: 100mm; */
+            /* width: 5in; */
+            /* width: 800px; */
+            /* width: 500pt; */
+            /* width: 500pc; */
+            /*             
+            height: 50vh;
+            width: 50vw; */
+
+            /* font-size: 30px; */
+
+            font-size: 40px;
+
+        }
+
+        #child {
+            /* border: 2px solid violet;
+                width: 50%; */
+            /* font-size: 0.5em; */
+
+            /* font-s ize: 2em; */
+
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    this is in html tag
+    <div id="parent">
+        <p>We Use length in width, height, margin, padding, font-size </p>
+        <div id="child">
+            <p>There are two types of units in CSS</p>
+            <p>a. Absolute </p>
+            <p>b. Relative </p>
+        </div>
+    </div>
+    <!-- Absolute Unit In CSS         
+        1. Cm
+        2. Mm
+        3. Inch
+        4. Px (1inch = 96px)
+        5.Pt (1inch = 72pt)
+        6. Pc (1pc = 12pt) -->
+
+    <!-- Relative Unit In CSS
+        1. Em - em is relative  to the size of its direct parent
+        2. Rem - rem is only relative to root (html tag) size
+        3. Vh - 1% of view port width
+        4. VW - 1% of view port width
+        5. %  - relative to parent -->
+</body>
+
+</html>

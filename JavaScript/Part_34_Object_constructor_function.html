@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 34 - Object constructor function</title>
+</head>
+<body>
+    <script>
+        // object
+        // var student = {
+        //     firstName: "Pankaj",
+        //     lastName: "Sahu",
+        //     age: 25,
+        //     class: 5
+        // }
+
+        // constructor function
+        function Student(first, last, age, cls){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.class = cls;
+        }
+
+        // var student1 = new Student("Pankaj", "Sahu", 25, 17);
+        // console.log(student1);
+        // var student2 = new Student("ranjeet", "rana", 21, 12);
+        // console.log(student2);
+        // var student3 = new Student("suman", "panda", 19, 15);
+        // console.log(student3);
+
+        var student1 = new Student("Pankaj", "Sahu", 25, 17);
+        student1.nationality = "Indian";
+        console.log(student1);
+
+        // var student2 = new Student("ranjeet", "rana", 21, 12);
+        // console.log(student2);
+        // var student3 = new Student("suman", "panda", 19, 15);
+        // console.log(student3);
+
+        student1.name = function(){
+            return this.firstName + " " + this.lastName;
+        }
+        console.log(student1.name());
+    </script>
+</body>
+</html>

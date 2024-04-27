@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 58 - Page Load Events</title>
+</head>
+
+<body>
+  <img id="image" src="/Project/laptop/laptop7.jpg" alt="">
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      alert('DOM tree created');
+    });
+
+    // window.addEventListener('load', function () {
+    //   console.log('Fully loded');
+    // });
+
+    let img = document.getElementById('image');
+    img.addEventListener('load', function () {
+      alert('image loaded successfully!')
+    })
+  </script>
+</body>
+
+</html>

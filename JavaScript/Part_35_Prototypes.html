@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 35 - JavaScript Prototypes</title>
+</head>
+<body>
+    <script>
+        // constructor function
+        function Student(first, last, age, cls){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.class = cls;
+        }
+
+        var student1 = new Student("Pankaj", "Sahu", 25, 17);
+        var student2 = new Student("ranjeet", "rana", 21, 12);
+
+        // Student.school = "ABC"; // invalid 
+        student1.school = "ABC"; // valid 
+        console.log(student1);
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 7 - Data Types in JavaScript</title>
+</head>
+<body>
+    <script>
+        let x = 5 +  '5';
+        document.write(x);
+        document.write("<br>");
+
+        let y=5;
+        y='hello';
+        document.write(y);
+        document.write("<br>");
+
+        let z= "'hello'";
+        document.write(z);
+        document.write("<br>");
+        
+        let a= '"hello"';
+        document.write(a);
+        document.write("<br>");
+
+        let b= 'hel"lo';
+        document.write(b);
+        document.write("<br>");
+
+        let c= "hel'lo";
+        document.write(c);
+        document.write("<br>");
+
+        let d= "hel\"lo";
+        document.write(d);
+        document.write("<br>");
+
+        let e= 'hel\'lo';
+        document.write(e);
+        document.write("<br>");
+
+
+
+        // boolean : true or false
+        let f= 2>3;
+        document.write(f);
+        document.write("<br>");
+
+        //arry
+        let g=["pankaj", "tom", "prabhat"];
+        //object
+        let man={name:"tom", age:50};
+        document.write("<br>");
+
+        //undefined
+        let h;
+        document.write(h);
+        document.write("<br>");
+
+        let i = typeof 10;
+        document.write(i);
+        document.write("<br>");
+
+        let j = typeof "pankaj";
+        document.write(j);
+        document.write("<br>");
+
+        let k = "pankaj";
+        document.write(typeof j);
+        document.write("<br>");
+
+        // alert(typeof k);
+        // alert("hello ${k}");  //template literal but wrong code
+        alert(`hello ${k}`);  //template literal
+    </script>
+</body>
+</html>

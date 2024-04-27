@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 28 - The JavaScript "this" Keyword
+    </title>
+</head>
+
+<body>
+    <script>
+
+            // object
+        let person = {
+            firstName: 'Pankaj',
+            lastName: 'Sahu',
+            sayHello() {
+                console.log("Hello! i am " + this.firstName + " i have a " + car.brand + " car");
+            }
+        };
+
+        let car = {
+            brand:'Tata',
+            model: 'safari'
+        }
+
+        person.sayHello();
+    </script>
+</body>
+
+</html>

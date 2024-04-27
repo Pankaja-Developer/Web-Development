@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin In HTML</title>
+</head>
+<style>
+    body{
+        border: solid;
+    }
+    .div1{
+        border: solid red 2px;
+        padding:20px;
+    }
+    #margin{
+        /* margin-top: -30px;
+        margin-bottom: 30px;
+        margin-left: 40px;
+        margin-right: 20px; */
+        /* margin: 10px; */
+        /* margin: 10px 20px; */
+        /* margin: 10px 20px 30px 40px; */
+
+
+        width: 200px;
+        /* margin: auto; */
+        margin: 20px auto;
+
+        /* there are also margin colaps which defines if there are 2 box of margin then it will take which is hiest */
+
+    }
+</style>
+<body>
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem ab, itaque fugit velit laborum. Distinctio, aliquid repellendus illum iusto dolor voluptate a architecto quos placeat quis. Quod, aliquam aut.
+    </div>
+    <div class="div1" id="margin">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem ab, itaque fugit velit laborum. Distinctio, aliquid repellendus illum iusto dolor voluptate a architecto quos placeat quis. Quod, aliquam aut.
+    </div>
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem ab, itaque fugit velit laborum. Distinctio, aliquid repellendus illum iusto dolor voluptate a architecto quos placeat quis. Quod, aliquam aut.
+    </div>
+</body>
+</html>

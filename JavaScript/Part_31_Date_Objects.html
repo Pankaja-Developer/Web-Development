@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 31 - Date Objects</title>
+</head>
+<body>
+    <script>
+        // let x = new Date();
+        // console.log(x);  // new date
+
+        // let x = new Date(2018, 11, 13, 10, 33, 56, 7);
+        // console.log(x);
+        // console.log(x.getTime());  // get time in mile second
+        // console.log(x.getFullYear());
+        // console.log(x.getMonth());
+        // console.log(x.getDate());
+        // console.log(x.getHours());
+        // console.log(x.getMinutes());
+        // console.log(x.getSeconds());
+        // console.log(x.getDay());
+
+
+
+        // let x = new Date(2018, 11, 13, 10, 33, 56, 7);
+        // x.setFullYear(2023);
+        // x.setMonth(9);
+        // x.setDate(14);
+        // x.setHours(19);
+        // x.setMinutes(13);
+        // x.setSeconds(45);
+        // console.log(x);
+
+
+        //logic
+        // let x = new Date(2018, 11, 13, 10, 33, 56, 7);
+        // x.setDate(x.getDate() + 50);
+        // console.log(x);
+
+
+        // // comparison
+        // let x = new Date(2018, 11, 13, 10, 33, 56, 7);
+        // let y = new Date(2018, 11, 13, 10, 33, 56, 7);
+        // y.setDate(x.getDate() + 50);
+        // console.log(x);
+        // console.log(y);
+
+
+        let x = new Date(2018, 11, 13, 10, 33, 56, 7);
+        let y = new Date();
+
+        if(x > y){
+            console.log("x is past date");
+        } else if(y > x){
+            console.log("x is future date");
+        }else{
+            console.log("x is same date");
+        }
+    </script>
+</body>
+</html>

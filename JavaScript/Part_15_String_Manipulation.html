@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Part 15] - String Manipulation</title>
+</head>
+
+<body>
+    <script>
+        // let str="pankaj";
+        // let greet = `hi ${str}`;
+        // document.write(greet);
+
+        // let str = "pankaj \n sahu";
+        // let str = "pankaj \t sahu";
+        // let str = "pankaj \\ sahu"; //it will okay for document.write
+        // let str = "pankaj \" sahu";  //it will okay for document.write
+        // document.write(str); //it will not work for document.write
+        // console.log(str);
+
+        // let str = "pankaj";
+        // document.write(str.length);
+        // document.write(str[2]);
+        // let str2= "sahu";
+        // document.write(str +" "+ str2);
+        // if("pankaj"==str){
+        // if("pankaj"==str){  // not equal because of case sensitive
+        // document.write("equal")
+        // }else{
+        //     write.document("not equal");
+        // }
+        // let str3 = str.concat(" ", str2);
+        // document.write(str3);
+
+        let str4 = "This is Javastring tutorial. It is a good  tutorial.";
+        // let substr=str4.substr(8, 19); // start 8 to and count as 1 there and find out 19 
+        // let substr=str4.substring(8, 19); // go to 18
+        // document.write(substr);
+        // let position = str4.indexOf('good');
+        // let position = str4.indexOf('is');
+        // let position = str4.indexOf('is', 10);
+        // document.write(position);
+        // let position = str4.lastIndexOf('is');
+        // let position = str4.lastIndexOf('iss'); // if there is no word in index the result will be -1
+        // document.write(position);
+        
+        // let trimedStr = str4.trim();
+        // document.write(str4);
+        // document.write(trimedStr);  // trime white space from starting and ending
+        // let trimedStr = str4.trimStart();
+        // let trimedStr = str4.trimEnd();
+        // document.write(trimedStr);
+
+        // let trimedStr = str4.toUpperCase();
+        // let trimedStr = str4.toLowerCase();
+        // document.write(trimedStr);
+        // let trimedStr = str4.replace('good', 'best');
+        // document.write(trimedStr);
+        // let trimedStr = str4.includes('good');
+        let trimedStr = str4.includes('html');
+        document.write(trimedStr);
+    </script>
+</body>
+
+</html>

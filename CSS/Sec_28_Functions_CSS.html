@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions In CSS</title>
+    <style>
+        :root{
+            --height:200px;
+            --primary-color: teal;
+            --btn-color:violet;
+            --text-color:white;
+            --bg-color:blueviolet;
+        }
+        #fun {
+            /* background-color: blueviolet;
+            height: 200px;
+            width: calc(100% - 200px); */
+
+            background-color: var(--bg-color);
+            height:var(--height);
+            width: calc(100% - 200px);
+
+        }
+        a{
+            /* background-color: violet;
+            padding: 10px 20px;
+            color: white;
+            margin: 25px;
+            text-decoration: none; */
+
+        background-color: var(--btn-color);
+        padding: 10px 20px;
+            color:var(--text-color);
+            margin: 25px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- functions are 
+    rgb()
+    url()
+    liner-gradient() -->
+
+    <div id="fun">
+
+    </div>
+    <br>
+    <hr>
+    <a href="https://google.com">Google</a>
+</body>
+
+</html>

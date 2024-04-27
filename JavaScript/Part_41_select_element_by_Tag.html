@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 41 - How to select an element by Tag</title>
+</head>
+<body>
+    <h1>How to select an element by tag</h1>
+    
+    <!-- <h2>headring 1</h2>
+    <p>paragraph 1</p>
+    <h2>headring 2</h2>
+    <p>paragraph 2</p>
+    <h2>headring 3</h2>
+    <p>paragraph 3</p> -->
+
+
+
+    <h2>headring 1</h2>
+<div id="sel">
+    <p>paragraph 1</p>
+    <h2>headring 2</h2>
+    <p>paragraph 2</p>
+    <h2>headring 3</h2>
+    <p>paragraph 3</p>
+    
+</div>
+
+    <script>
+        // let elm = document.getElementsByTagName("h2");
+        // console.log(elm);
+
+        // for(let i=0; i<elm.length; i++){
+        //     elm[i].innerHTML = " hello ";
+        // }
+
+        let select = document.getElementById("sel");
+        let elm = select.getElementsByTagName("h2");
+
+        for(let i=0; i<elm.length; i++){
+            elm[i].innerHTML = "hello";
+        }
+    </script>
+</body>
+</html>

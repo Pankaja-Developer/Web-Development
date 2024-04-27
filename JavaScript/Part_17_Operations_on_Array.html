@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 17 - Operations on Array</title>
+</head>
+<body>
+    <script>
+        // let book = ["Math", "Physics", "Bio", "Computer Science"];
+
+        // document.write(book + "<br>");
+        // document.write(book.length + "<br>");
+
+        // book.push("Hindi");  // add an element at the last
+        // document.write(book + "<br>");
+        // document.write(book.length + "<br>");
+
+        // book.unshift("English");  // add an element at the first
+        // document.write(book + "<br>");
+        // document.write(book.length + "<br>");
+
+        // book.pop();  // delete a element from end
+        // document.write(book + "<br>");
+        // document.write(book.length + "<br>");
+
+        // book.shift();  // delete an element from starting
+        // document.write(book + "<br>");
+        // document.write(book.length + "<br>");
+
+        // // delete an element from midle 
+        // book.splice(1, 1);
+        // document.write(book + "<br>");
+        // document.write(book.length + "<br>");
+        // book.splice(0, 2);
+        // document.write(book + "<br>");
+        // document.write(book.length + "<br>");
+
+        // // if you want to empty an array
+        // // book = [];
+        // book.length = 0;
+        // document.write(book + "<br>");
+        // document.write(book.length + "<br>");
+
+        // book = ["Math", "Physics", "Bio", "Computer Science"];
+        
+        // let position = book.indexOf("Bio");  // to know th position of gthe array
+        // document.write(position + "<br>");
+        // document.write(book.length + "<br>");
+
+        // // let book = "Math";
+
+        // document.write(Array.isArray(book));
+        // document.write("<br>");
+
+        // let text = "This is a random text";
+        // //  let wordarray = text.split(' ');
+        // //  document.write(wordarray);
+        // // document.write("<br>");
+
+        // // let wordarray = book.join(' ');
+        // let wordarray = book.join('-');
+        // document.write(wordarray);
+        // document.write("<br>");
+
+        // let book2 = ["Hindi", "English"];
+        // let book3 = ["IT"];
+        // // let newbook = book.concat(book2);
+        // let newbook = book.concat(book2, book3);
+        // document.write(newbook);
+        // document.write("<br>");
+
+        // Multi dimensional array
+        // let booksWithPages = [
+        //     ["Math", "300"],
+        //     // ["Math", ["300", "IT"]], 
+        //     ["Physics", "500"], 
+        //     ["Bio", "400"]
+        // ];
+
+        // let fatch = booksWithPages[1][0];
+        // // document.write(fatch);
+        // // document.write(booksWithPages[1]);
+        // // document.write(booksWithPages[0][1][1]);
+        // document.write("<br>");
+
+
+        let subject = ["Math", "Physics", "Bio", "Computer Science"];
+
+        // for(i=0; i<subject.length; i++){
+        //     document.write(`Element ${i} is ${subject[i]} \n`);
+        //     document.write("<br>");
+        // }
+
+        //for each loop
+        subject.forEach(myfu);
+        function myfu(value){
+            document.write(value);
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

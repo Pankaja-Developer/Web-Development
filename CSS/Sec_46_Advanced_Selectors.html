@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Selectors In CSS</title>
+    
+</head>
+<body>
+    <!-- 1. Type Selector
+    example
+    H1{
+        color:red;
+    } -->
+    <!-- <style>
+        li{
+            color: red;
+        }
+    </style>
+    <div>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate distinctio repudiandae esse quia numquam itaque, saepe velit, nostrum, amet ab. Voluptatem et nobis vel. Ipsa, dolores sit magni eaque sunt fugit voluptates quas distinctio odio odit ut architecto quasi tenetur exercitationem. Inventore quaerat facilis eveniet neque molestias eaque fugit optio beatae hic, laudantium illum voluptate perspiciatis voluptatibus ratione! Corporis officiis excepturi similique, adipisci dolor laboriosam vel, quasi deleniti, nostrum nihil neque error esse nesciunt in. Voluptatem, nam omnis maxime architecto cum error eveniet veritatis, natus officiis, vitae recusandae cumque tempore! Sed maiores dignissimos, unde provident reiciendis ipsam eligendi quisquam?</p>
+        <ul>
+            <li>list1</li>
+            <li id="list2">list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li class="list5">list5 <a href="https://www.google.com">Google</a></li>
+            <li class="list5">list6</li>
+            <li>list7 <a href="">Yahoo</a></li>
+            <li>list8</li>
+        </ul>
+    </div>
+    <a href="">outside link</a> -->
+
+    <!-- 2. ID Selector
+    example
+    #red-p{
+        color: red;
+    } -->
+    <!-- <style>
+        #list2{
+            color: red;
+        }
+    </style>
+    <div>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate distinctio repudiandae esse quia numquam itaque, saepe velit, nostrum, amet ab. Voluptatem et nobis vel. Ipsa, dolores sit magni eaque sunt fugit voluptates quas distinctio odio odit ut architecto quasi tenetur exercitationem. Inventore quaerat facilis eveniet neque molestias eaque fugit optio beatae hic, laudantium illum voluptate perspiciatis voluptatibus ratione! Corporis officiis excepturi similique, adipisci dolor laboriosam vel, quasi deleniti, nostrum nihil neque error esse nesciunt in. Voluptatem, nam omnis maxime architecto cum error eveniet veritatis, natus officiis, vitae recusandae cumque tempore! Sed maiores dignissimos, unde provident reiciendis ipsam eligendi quisquam?</p>
+        <ul>
+            <li>list1</li>
+            <li id="list2">list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li class="list5">list5 <a href="https://www.google.com">Google</a></li>
+            <li class="list5">list6</li>
+            <li>list7 <a href="">Yahoo</a></li>
+            <li>list8</li>
+        </ul>
+    </div>
+    <a href="">outside link</a> -->
+
+    <!-- 3. Class Selector
+    example
+    .red-p{
+        color: red;
+    } -->
+    <!-- <style>
+        .list5{
+            color: red;
+        }
+    </style>
+    <div>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate distinctio repudiandae esse quia numquam itaque, saepe velit, nostrum, amet ab. Voluptatem et nobis vel. Ipsa, dolores sit magni eaque sunt fugit voluptates quas distinctio odio odit ut architecto quasi tenetur exercitationem. Inventore quaerat facilis eveniet neque molestias eaque fugit optio beatae hic, laudantium illum voluptate perspiciatis voluptatibus ratione! Corporis officiis excepturi similique, adipisci dolor laboriosam vel, quasi deleniti, nostrum nihil neque error esse nesciunt in. Voluptatem, nam omnis maxime architecto cum error eveniet veritatis, natus officiis, vitae recusandae cumque tempore! Sed maiores dignissimos, unde provident reiciendis ipsam eligendi quisquam?</p>
+        <ul>
+            <li>list1</li>
+            <li id="list2">list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li class="list5">list5 <a href="https://www.google.com">Google</a></li>
+            <li class="list5">list6</li>
+            <li>list7 <a href="">Yahoo</a></li>
+            <li>list8</li>
+        </ul>
+    </div>
+    <a href="">outside link</a> -->
+
+    <!-- 4. Pseudo Class and Pseudo Element
+    example
+    a:hover{
+        color: red;
+    } -->
+    <!-- <style>
+        a:hover{
+            color: red;
+        }
+    </style>
+    <div>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate distinctio repudiandae esse quia numquam itaque, saepe velit, nostrum, amet ab. Voluptatem et nobis vel. Ipsa, dolores sit magni eaque sunt fugit voluptates quas distinctio odio odit ut architecto quasi tenetur exercitationem. Inventore quaerat facilis eveniet neque molestias eaque fugit optio beatae hic, laudantium illum voluptate perspiciatis voluptatibus ratione! Corporis officiis excepturi similique, adipisci dolor laboriosam vel, quasi deleniti, nostrum nihil neque error esse nesciunt in. Voluptatem, nam omnis maxime architecto cum error eveniet veritatis, natus officiis, vitae recusandae cumque tempore! Sed maiores dignissimos, unde provident reiciendis ipsam eligendi quisquam?</p>
+        <ul>
+            <li>list1</li>
+            <li id="list2">list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li class="list5">list5 <a href="https://www.google.com">Google</a></li>
+            <li class="list5">list6</li>
+            <li>list7 <a href="">Yahoo</a></li>
+            <li>list8</li>
+        </ul>
+    </div>
+    <a href="">outside link</a> -->
+
+    <!-- p::first-line{
+        color:red;
+    } -->
+    <!-- <style>
+        p::first-line{
+            color: red;
+        }
+    </style>
+    <div>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate distinctio repudiandae esse quia numquam itaque, saepe velit, nostrum, amet ab. Voluptatem et nobis vel. Ipsa, dolores sit magni eaque sunt fugit voluptates quas distinctio odio odit ut architecto quasi tenetur exercitationem. Inventore quaerat facilis eveniet neque molestias eaque fugit optio beatae hic, laudantium illum voluptate perspiciatis voluptatibus ratione! Corporis officiis excepturi similique, adipisci dolor laboriosam vel, quasi deleniti, nostrum nihil neque error esse nesciunt in. Voluptatem, nam omnis maxime architecto cum error eveniet veritatis, natus officiis, vitae recusandae cumque tempore! Sed maiores dignissimos, unde provident reiciendis ipsam eligendi quisquam?</p>
+        <ul>
+            <li>list1</li>
+            <li id="list2">list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li class="list5">list5 <a href="https://www.google.com">Google</a></li>
+            <li class="list5">list6</li>
+            <li>list7 <a href="">Yahoo</a></li>
+            <li>list8</li>
+        </ul>
+    </div>
+    <a href="">outside link</a> -->
+
+    <!-- 5. Attribute Selector
+    example
+    a[href="https://example.com"]{
+        color:red;
+    } -->
+    <!-- <style>
+        a[href="https://www.google.com"]{
+            color: red;
+        }
+        input[type="password"]{
+            color: red;
+        }
+    </style>
+    <div>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate distinctio repudiandae esse quia numquam itaque, saepe velit, nostrum, amet ab. Voluptatem et nobis vel. Ipsa, dolores sit magni eaque sunt fugit voluptates quas distinctio odio odit ut architecto quasi tenetur exercitationem. Inventore quaerat facilis eveniet neque molestias eaque fugit optio beatae hic, laudantium illum voluptate perspiciatis voluptatibus ratione! Corporis officiis excepturi similique, adipisci dolor laboriosam vel, quasi deleniti, nostrum nihil neque error esse nesciunt in. Voluptatem, nam omnis maxime architecto cum error eveniet veritatis, natus officiis, vitae recusandae cumque tempore! Sed maiores dignissimos, unde provident reiciendis ipsam eligendi quisquam?</p>
+        <ul>
+            <li>list1</li>
+            <li id="list2">list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li class="list5">list5 <a href="https://www.google.com">Google</a></li>
+            <li class="list5">list6</li>
+            <li>list7 <a href="">Yahoo</a></li>
+            <li>list8</li>
+        </ul>
+    </div>
+    <a href="">outside link</a> -->
+
+    <!-- 6. Universal Selectors
+    example
+    *{
+        color:red;
+    } -->
+    <!-- <style>
+        *{
+            border: 1px solid red;
+        }
+    </style>
+    <div>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate distinctio repudiandae esse quia numquam itaque, saepe velit, nostrum, amet ab. Voluptatem et nobis vel. Ipsa, dolores sit magni eaque sunt fugit voluptates quas distinctio odio odit ut architecto quasi tenetur exercitationem. Inventore quaerat facilis eveniet neque molestias eaque fugit optio beatae hic, laudantium illum voluptate perspiciatis voluptatibus ratione! Corporis officiis excepturi similique, adipisci dolor laboriosam vel, quasi deleniti, nostrum nihil neque error esse nesciunt in. Voluptatem, nam omnis maxime architecto cum error eveniet veritatis, natus officiis, vitae recusandae cumque tempore! Sed maiores dignissimos, unde provident reiciendis ipsam eligendi quisquam?</p>
+        <ul>
+            <li>list1</li>
+            <li id="list2">list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li class="list5">list5 <a href="https://www.google.com">Google</a></li>
+            <li class="list5">list6</li>
+            <li>list7 <a href="">Yahoo</a></li>
+            <li>list8</li>
+        </ul>
+    </div>
+    <a href="">outside link</a> -->
+
+    <!-- 7. Combinator Selector
+    Descendant combinatory (child at any stage)
+    .red-p span{
+        color:green;
+    } -->
+    <!-- <style>
+        div a{
+            color: red;
+        }
+    </style>
+    <div>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate distinctio repudiandae esse quia numquam itaque, saepe velit, nostrum, amet ab. Voluptatem et nobis vel. Ipsa, dolores sit magni eaque sunt fugit voluptates quas distinctio odio odit ut architecto quasi tenetur exercitationem. Inventore quaerat facilis eveniet neque molestias eaque fugit optio beatae hic, laudantium illum voluptate perspiciatis voluptatibus ratione! Corporis officiis excepturi similique, adipisci dolor laboriosam vel, quasi deleniti, nostrum nihil neque error esse nesciunt in. Voluptatem, nam omnis maxime architecto cum error eveniet veritatis, natus officiis, vitae recusandae cumque tempore! Sed maiores dignissimos, unde provident reiciendis ipsam eligendi quisquam?</p>
+        <ul>
+            <li>list1</li>
+            <li id="list2">list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li class="list5">list5 <a href="https://www.google.com">Google</a></li>
+            <li class="list5">list6</li>
+            <li>list7 <a href="">Yahoo</a></li>
+            <li>list8</li>
+        </ul>
+    </div>
+    <a href="">outside link</a> -->
+
+    
+    <!-- child combinator(direct child)
+    .red-p > span{
+        color:green;
+    } -->
+    <!-- <style>
+        div>a{
+            color: red;
+        }
+    </style>
+    <div>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate distinctio repudiandae esse quia numquam itaque, saepe velit, nostrum, amet ab. Voluptatem et nobis vel. Ipsa, dolores sit magni eaque sunt fugit voluptates quas distinctio odio odit ut architecto quasi tenetur exercitationem. Inventore quaerat facilis eveniet neque molestias eaque fugit optio beatae hic, laudantium illum voluptate perspiciatis voluptatibus ratione! Corporis officiis excepturi similique, adipisci dolor laboriosam vel, quasi deleniti, nostrum nihil neque error esse nesciunt in. Voluptatem, nam omnis maxime architecto cum error eveniet veritatis, natus officiis, vitae recusandae cumque tempore! Sed maiores dignissimos, unde provident reiciendis ipsam eligendi quisquam?</p>
+        <ul>
+            <li>list1</li>
+            <li id="list2">list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li class="list5">list5 <a href="https://www.google.com">Google</a></li>
+            <li class="list5">list6</li>
+            <li>list7 <a href="">Yahoo</a></li>
+            <li>list8</li>
+        </ul>
+        <a href="">direct child</a>
+    </div>
+    
+    <a href="">outside link</a> -->
+
+    <!-- Adjacent combinatory(right after sibiling)
+    .red-p + h1{
+        color:green;
+    } -->
+    <!-- <style>
+        div+a{
+            color: red;
+        }
+    </style>
+    <div>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate distinctio repudiandae esse quia numquam itaque, saepe velit, nostrum, amet ab. Voluptatem et nobis vel. Ipsa, dolores sit magni eaque sunt fugit voluptates quas distinctio odio odit ut architecto quasi tenetur exercitationem. Inventore quaerat facilis eveniet neque molestias eaque fugit optio beatae hic, laudantium illum voluptate perspiciatis voluptatibus ratione! Corporis officiis excepturi similique, adipisci dolor laboriosam vel, quasi deleniti, nostrum nihil neque error esse nesciunt in. Voluptatem, nam omnis maxime architecto cum error eveniet veritatis, natus officiis, vitae recusandae cumque tempore! Sed maiores dignissimos, unde provident reiciendis ipsam eligendi quisquam?</p>
+        <ul>
+
+            <li>list1</li>
+            <li id="list2">list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li class="list5">list5 <a href="https://www.google.com">Google</a></li>
+            <li class="list5">list6</li>
+            <li>list7 <a href="">Yahoo</a></li>
+            <li>list8</li>
+        </ul>
+        <a href="">direct child</a>
+    </div>
+    <!-- <p>hello</p> -->
+    <a href="">outside link</a> -->
+    
+    <!-- General sibiling combinatory (all sibiling)
+    .red-p ~ h1{
+        color:green;
+    } -->
+    <!-- <style>
+        div~a{
+            color: red;
+        }
+    </style>
+    <div>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate distinctio repudiandae esse quia numquam itaque, saepe velit, nostrum, amet ab. Voluptatem et nobis vel. Ipsa, dolores sit magni eaque sunt fugit voluptates quas distinctio odio odit ut architecto quasi tenetur exercitationem. Inventore quaerat facilis eveniet neque molestias eaque fugit optio beatae hic, laudantium illum voluptate perspiciatis voluptatibus ratione! Corporis officiis excepturi similique, adipisci dolor laboriosam vel, quasi deleniti, nostrum nihil neque error esse nesciunt in. Voluptatem, nam omnis maxime architecto cum error eveniet veritatis, natus officiis, vitae recusandae cumque tempore! Sed maiores dignissimos, unde provident reiciendis ipsam eligendi quisquam?</p>
+        <ul>
+
+            <li>list1</li>
+            <li id="list2">list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li class="list5">list5 <a href="https://www.google.com">Google</a></li>
+            <li class="list5">list6</li>
+            <li>list7 <a href="">Yahoo</a></li>
+            <li>list8</li>
+        </ul>
+        <a href="">direct child</a>
+    </div>
+    <p>hello</p>
+    <a href="">outside link</a> -->
+    
+    <!-- 7.1 Add Selector
+    General sibiling combinatory(right after sibiling)
+    .red-p, h1{
+        color:green;
+    } -->
+    <style>
+        h1, p{
+            color: red;
+        }
+    </style>
+    <div>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate distinctio repudiandae esse quia numquam itaque, saepe velit, nostrum, amet ab. Voluptatem et nobis vel. Ipsa, dolores sit magni eaque sunt fugit voluptates quas distinctio odio odit ut architecto quasi tenetur exercitationem. Inventore quaerat facilis eveniet neque molestias eaque fugit optio beatae hic, laudantium illum voluptate perspiciatis voluptatibus ratione! Corporis officiis excepturi similique, adipisci dolor laboriosam vel, quasi deleniti, nostrum nihil neque error esse nesciunt in. Voluptatem, nam omnis maxime architecto cum error eveniet veritatis, natus officiis, vitae recusandae cumque tempore! Sed maiores dignissimos, unde provident reiciendis ipsam eligendi quisquam?</p>
+        <ul>
+
+            <li>list1</li>
+            <li id="list2">list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li class="list5">list5 <a href="https://www.google.com">Google</a></li>
+            <li class="list5">list6</li>
+            <li>list7 <a href="">Yahoo</a></li>
+            <li>list8</li>
+        </ul>
+        <a href="">direct child</a>
+    </div>
+    <p>hello</p>
+    <a href="">outside link</a>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 33 - JavaScript Accessors (Getters and Setters)</title>
+</head>
+
+<body>
+    <script>
+
+        // var person = {
+        //     name: "Pankaj",
+        //     age: 25,
+        //     getName: function(){
+        //         return this.name.toUpperCase();
+        //     }
+        //     }
+        //     // console.log(person.name.toUpperCase());
+
+        //     console.log(person.getName());
+
+
+
+        // another way of get function
+        // var person = {
+        //     name: "Pankaj",
+        //     age: 25,
+        //   get getName(){
+        //         return this.name.toUpperCase();
+        //     }
+        //     }
+
+        //     console.log(person.getName);
+
+
+
+        var person = {
+            name: "Pankaj",
+            age: 25,
+
+            set setName(n) {
+                this.name = n.toUpperCase();
+            }
+        }
+        person.setName = "ajit";
+        console.log(person);
+
+
+    </script>
+</body>
+
+</html>

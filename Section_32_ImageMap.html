@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMage Maps in HTML</title>
+</head>
+<body>
+    <!-- <a href="https://Amazon.com" target="_blank">
+        <img src="IMAGES/imagemap.jpg" alt="">
+    </a> -->
+
+    <img src="IMAGES/imagemap.jpg" usemap="#image_map" target="_blank">
+    <map name="image_map">
+      <area alt="laptop" title="laptop" href="https://www.amazon.com/s?k=laptop&crid=32M9JV19OIVFF&sprefix=laptop%2Caps%2C731&ref=nb_sb_noss_1" coords="31,44,272,348" shape="rect">
+      <area alt="mobile" title="mobile" href="https://www.amazon.com/s?k=moniles&crid=3VR97H5HHWNHG&sprefix=moniles%2Caps%2C472&ref=nb_sb_noss_2" coords="290,173,334,244" shape="rect">
+      <area alt="cup" title="cup" href="https://www.amazon.com/s?k=cups&crid=34J8HC1Y307FS&sprefix=cups%2Caps%2C506&ref=nb_sb_noss_1" coords="337,300,46" shape="circle">
+    </map>
+
+    <!-- if you want to findout shape/coords of image go to Google and Search image map generator
+    it will each to go https://imagemap.org/ -->
+</body>
+</html>

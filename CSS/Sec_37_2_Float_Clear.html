@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear[2nd] In CSS</title>
+    <style>
+        #first{
+            background-color: blueviolet;
+            border: solid red 2px;
+            width: 60%;
+            height: 200px;
+            float: left;
+        }
+        #sec{
+            background-color: greenyellow;
+            border: solid red 2px;
+            width: 39%;
+            height: 100px;
+            float: left;
+        }
+        #third{
+            background-color: green;
+            border: solid black 2px;
+            /* width: 39%; */
+            float: left;
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="first"></div>
+    <div id="sec"></div>
+    <div id="third">i am third</div>
+</body>
+</html>

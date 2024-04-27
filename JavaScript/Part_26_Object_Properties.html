@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 26 - Object Properties</title>
+</head>
+<body>
+    <script>
+        // Object
+        let person = {
+            firstName: 'Pankaj',
+            lastName: 'Sahu'
+        };
+
+        // document.write(person.firstName);
+        // document.write(person.lastName);
+
+        // document.write(person['firstName']);
+        // document.write(person['lastName']);
+
+        // console.log(person);
+
+        // person.firstName = 'Jeet';  //overwrite
+        // document.write(person.firstName);
+
+        person.age = 25; // new property
+        // console.log(person);
+
+        // delete person.lastName;  // to delete property
+        // console.log(person);
+
+        // document.write('height' in person); // to check the property is available or not
+
+
+        // to traverse all property of object
+        for(let key in person){
+            // document.write(key);
+            // console.log(key);
+            // console.log(key + " : " + person.key);  // we can access but value will be undefined 
+            console.log(key + " : " + person[key]);
+        }
+    </script>
+</body>
+</html>

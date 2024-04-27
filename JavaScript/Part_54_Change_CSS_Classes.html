@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 54] - Change CSS Classes</title>
+    <style>
+        .color{
+            background-color: yellow;
+            color: blue;
+        }
+        .dim{
+            border: 1px solid red;
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="color dim">
+        <p>this is dummy text</p>
+    </div>
+
+
+    <script>
+        let box = document.getElementById("box");
+        // console.log(box.className);
+        box.className += " dim2"; 
+        // console.log(box.className);
+
+        // console.log(box.classList);
+
+        // for(let css of box.classList){
+        //     console.log(css);
+        // }
+
+        box.classList.add("dim3");
+        console.log(box.classList);
+
+        box.classList.remove("dim3");
+        console.log(box.classList);
+
+        box.classList.replace("color", "dim3");
+        console.log(box.classList);
+
+        let result = box.classList.contains("dim3");
+        console.log(result);
+
+        box.classList.toggle("dim3");
+        console.log(box.classList);
+    </script>
+</body>
+</html>
